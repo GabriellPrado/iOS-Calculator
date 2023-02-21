@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {    
+    margin: 0;
+
+    background: -o-linear-gradient(135deg, #35C3F3, #8b9fe8, #e681d8, #ffa9a4, #FED2CE);
+    background: linear-gradient(-45deg, #35C3F3, #8b9fe8, #e681d8, #ffa9a4, #FED2CE);
+    background-size: 250% 250%;
+
+    -webkit-animation: animateBackground 10s ease infinite;
+    -moz-animation: animateBackground 10s ease infinite;
+    -o-animation: animateBackground 10s ease infinite;
+    animation: animateBackground 10s ease infinite;
+}
+
+@-webkit-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-moz-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-o-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    min-height: 100vh;
+    height: 100%;
+
+    padding: 30px;
+}
+
+.container {
+    background-color: #000000;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 375px;
+    border-radius: 30px;
+
+    -webkit-box-shadow: 15px 15px 30px rgba(0, 0, 0, .3);
+            box-shadow: 15px 15px 30px rgba(0, 0, 0, .3);
+}
+
+.container .result {
+    padding: 100px 30px 15px;
+    text-align: end;
+}
+.container .result p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    
+    color: #ffffff;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+
+    overflow: hidden;
+
+    -webkit-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+
+.container .keyboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    padding-bottom: 15px;
+}
+.container .keyboard .key{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin: 0 5px 10px 5px;
+
+    width: 75px;
+    height: 75px;
+    
+    background-color: #343434;
+    border-radius: 200px;
+
+    color: #fafafa;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.container .keyboard .key.big {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+
+    width: 160px;    
+    padding: 0 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container .keyboard .key:hover{
+    background-color: #555555;
+}
+.container .keyboard .key.gray {
+    background-color: #a7a6a7;
+    color: #070707;
+}
+.container .keyboard .key.gray:hover{
+    background-color: #d1d1d1;
+}
+.container .keyboard .key.orange {
+    background-color: #ff9601;
+    color: #fffdce;
+}
+.container .keyboard .key.orange:hover{
+    background-color: #ffb54e;
+}
